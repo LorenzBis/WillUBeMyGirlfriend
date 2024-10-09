@@ -28,8 +28,14 @@ btnNo.addEventListener("mouseover", (e) => {
         newLeft = getRandomNumber(0, containerWidth - btnWidth);
     }
 
-    btnNo.StyleMap.top = Math.floor(newTop) + "px";
-    btnNo.StyleMap.left = Math.floor(newLeft) + "px";
+    btnNo.style.top = Math.floor(newTop) + "px";
+    btnNo.style.left = Math.floor(newLeft) + "px";
     
 });
+
+btnYes.addEventListener("click", (e) => {
+    btnNo.classList.add("hide");
+    imageOne.classList.add("hide");
+    imageTwo.classList.remove("hide");
+})
 
